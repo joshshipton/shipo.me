@@ -58,7 +58,7 @@
 @media (max-width: 450px) {
 
   pre {
-    font-size: 2px;
+    font-size: 4px;
     
   }
 
@@ -78,27 +78,31 @@ margin: 0 auto;
     padding: 0 1em;
     
 }
-
-                /* Default font size */
         .ascii {
             display: inline-block;
             white-space: pre;
             letter-spacing: 0;
             line-height: 1;
             font-family: 'BitstreamVeraSansMono', 'CourierNew', Courier, monospace;
-            font-size: 12px; /* Default font size */
+            font-size: 12px;
         }
 
-        /* Font size for smaller screens */
+        /* banner size for smaller screens */
+        @media (max-width: 800px) {
+            .ascii {
+                font-size: 10px; 
+            }
+        }
+
         @media (max-width: 600px) {
             .ascii {
-                font-size: 10px; /* Adjust as needed */
+                font-size: 8px; 
             }
         }
 
         @media (max-width: 450px) {
             .ascii {
-                font-size: 3px; /* Adjust as needed */
+                font-size: 4px; 
             }
         }
 
