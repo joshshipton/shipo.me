@@ -6,6 +6,7 @@
     <title>internet website</title>
     <style>
         body, html {
+
             margin: 0;
             padding: 0;
             height: 100%;
@@ -26,14 +27,14 @@
           display: none;
 }
         .banner-container {
-            height: 100%; 
             width: auto;
             align-items: center;
             margin-bottom: 10px; 
+border: 1px solid red;
         }
 
         pre {
-  font-size: 0.875em;
+  font-size: 0.5em;
 }
 
 
@@ -78,35 +79,14 @@ margin: 0 auto;
     padding: 0 1em;
     
 }
-        .ascii {
+   .ascii {
             display: inline-block;
             white-space: pre;
             letter-spacing: 0;
             line-height: 1;
             font-family: 'BitstreamVeraSansMono', 'CourierNew', Courier, monospace;
             font-size: 12px;
-        }
-
-        /* banner size for smaller screens */
-        @media (max-width: 800px) {
-            .ascii {
-                font-size: 10px; 
-            }
-        }
-
-        @media (max-width: 600px) {
-            .ascii {
-                font-size: 80px; 
-            }
-        }
-
-        @media (max-width: 450px) {
-            .ascii {
-                font-size: 3px; 
-            }
-        }
-
-
+		        }
 
         .links {
             display: flex;
@@ -117,6 +97,73 @@ margin: 0 auto;
 
 
         }
+
+
+@media (max-width: 1024px) {
+    body {
+        max-width: 90%;
+    }
+    .content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .ascii{
+        font-size: 7px;
+    }
+    .content {
+        padding: 12px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+        font-size: 13px;
+    }
+    .ascii {
+        font-size: 5px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    .content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .ascii {
+        font-size: 4px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .content {
+        padding: 8px;
+    }
+}
+
+/* Add this for better readability on larger screens */
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+    .content {
+        padding: 30px;
+    }
+    .ascii-art {
+        font-size: 12px;
+    }
+}
 
 
     </style>
